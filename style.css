@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+:root {
+    --sucess-color: green;
+    --error-color: orangered;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -67,19 +72,42 @@ h2 {
     border-color: #777;
 }
 
-button {
-    font-family: sans-serif;
-    color:black;
-    border-color: black;
-    height: 30px;
-    width: 80px;
-    border-radius: 5px;
-    overflow: hidden;
+.form-control.success input {
+    border-color: var(--sucess-color);
 }
 
-button:hover {
-    background-color: rgb(184, 182, 182);
-    transition: all ease 0.3s;
-    width: 80px;
+.form-control.error input {
+    border-color: var(--error-color);
 }
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: navy;
+    border: 2px solid navy;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form button :hover{
+    background-color: rgb(141, 197, 216);
+}
+
+
     
