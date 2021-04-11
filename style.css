@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ecf0f1;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color:#ecf0f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0, 0.3);
+    width: 500px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 20px;
+    color: blue;
+    font-weight: 800;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.form {
+    padding: 30px 40px
+}
+
+.form-control {
+    margin-bottm: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    color:black;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #ecf0f1;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control input:hover{
+    background-color: rgb(202, 202, 202);
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+button {
+    font-family: sans-serif;
+    color:black;
+    border-color: black;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+button:hover {
+    background-color: rgb(184, 182, 182);
+    transition: all ease 0.3s;
+    width: 80px;
+}
+    
